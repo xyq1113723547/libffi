@@ -1,0 +1,18 @@
+--- libffi/Makefile.am
++++ libffi/Makefile.am
+@@ -127,6 +127,7 @@ noinst_HEADERS = \
+ 	src/cris/ffitarget.h						\
+ 	src/frv/ffitarget.h						\
+ 	src/ia64/ffitarget.h src/ia64/ia64_flags.h			\
++	src/loongarch/ffitarget.h
+ 	src/m32r/ffitarget.h						\
+ 	src/m68k/ffitarget.h						\
+ 	src/m88k/ffitarget.h						\
+@@ -158,6 +159,7 @@ EXTRA_libffi_la_SOURCES = \
+ 	src/cris/ffi.c src/cris/sysv.S					\
+ 	src/frv/ffi.c src/frv/eabi.S					\
+ 	src/ia64/ffi.c src/ia64/unix.S					\
++	src/loongarch/ffi.c src/loongarch/sysv.S			\
+ 	src/m32r/ffi.c src/m32r/sysv.S					\
+ 	src/m68k/ffi.c src/m68k/sysv.S					\
+ 	src/m88k/ffi.c src/m88k/obsd.S					\
